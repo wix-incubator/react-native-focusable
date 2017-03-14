@@ -1,0 +1,64 @@
+{
+  "name": "react-native-focusable",
+  "version": "1.0.0",
+  "description": "Declarative wrapper around imperative logic",
+  "license": "MIT",
+  "author": "Daniel Zlotin <zlotindaniel@gmail.com>",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wix/react-native-focusable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wix/react-native-focusable/issues"
+  },
+  "homepage": "https://github.com/wix/react-native-focusable",
+  "scripts": {
+    "test": "eslint src && jest --coverage",
+    "test-watch": "jest --coverage --watch"
+  },
+  "dependencies": {
+    "lodash": "4.x.x"
+  },
+  "devDependencies": {
+    "react-native": "0.40.0",
+    "react": "15.4.2",
+    "react-test-renderer": "15.4.2",
+    "babel-cli": "6.x.x",
+    "babel-core": "6.x.x",
+    "babel-polyfill": "6.x.x",
+    "babel-preset-react-native": "1.x.x",
+    "babel-register": "6.x.x",
+    "babel-jest": "18.x.x",
+    "eslint": "3.x.x",
+    "eslint-plugin-babel": "4.x.x",
+    "eslint-plugin-react": "6.x.x",
+    "eslint-plugin-react-native": "2.x.x",
+    "jest": "18.x.x",
+    "jest-cli": "18.x.x"
+  },
+  "babel": {
+    "presets": [
+      "react-native"
+    ]
+  },
+  "jest": {
+    "preset": "react-native",
+    "testPathDirs": [
+      "node_modules",
+      "src"
+    ],
+    "resetModules": true,
+    "resetMocks": true,
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
+  }
+}
